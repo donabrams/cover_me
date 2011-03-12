@@ -10,8 +10,9 @@ Enter CoverMe.
 
 h2. Changes from stock CoverMe
 
- - Changed rake task so rake cover_me runs the full rspec test suite then launches the results correctly.  Too slow for autotest.
- - Added launchy to launch results correctly after running.  Open was not happy.  This feels a bit hackish, but it works.
+Changed rake task so rake cover_me runs the full rspec test suite then launches the results correctly.  Too slow for autotest.
+
+Added launchy to launch results correctly after running.  Open was not happy.  This feels a bit hackish, but it works.
 
 h2. History
 
