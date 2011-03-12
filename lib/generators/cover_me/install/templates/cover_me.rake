@@ -7,10 +7,10 @@ namespace :cover_me do
   
 end
 
-task :test do
-  Rake::Task['cover_me:report'].invoke
-end
-
-task :spec do
+desc 'run cover_me coverage tests on specs (uncomment for features)'
+task :cover_me do
+  require 'cover_me'
+  Rake::Task['spec'].invoke
+#  Rake::Task['cucumber'].invoke
   Rake::Task['cover_me:report'].invoke
 end
