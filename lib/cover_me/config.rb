@@ -1,3 +1,5 @@
+require 'launchy'
+
 module CoverMe
   
   class << self
@@ -34,8 +36,6 @@ module CoverMe
           if CoverMe.config.formatter == CoverMe::HtmlFormatter
             index = File.join(CoverMe.config.html_formatter.output_path, 'index.html')
             if File.exists?(index)
-              gem 'launchy', '>= 0.4.0'
-              require 'launchy'
               Launchy.open "file://#{index}"
             end
           end
